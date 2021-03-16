@@ -45,15 +45,16 @@ HAVING d.department_name in ('IT','Sales');
 
 ### 查询
 
-set autotrace on
-
 SELECT d.department_name,count(e.job_id)as "部门总人数",
 avg(e.salary)as "平均工资" 
 FROM hr.departments d,hr.employees e WHERE d.department_id = e.department_id
 GROUP BY d.department_name HAVING d.department_name in ('IT','Sales');
+
 ![](查询3.png)
+
 ### 分析
 
 通过select语句确定要查询的字段，用from where 语句确定要查询的表，group by 确定要查询的部门
 
-
+## 优化建议
+![](优化方案.png)
