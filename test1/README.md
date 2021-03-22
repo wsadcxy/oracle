@@ -57,4 +57,5 @@ GROUP BY d.department_name HAVING d.department_name in ('IT','Sales');
 通过select语句确定要查询的字段，用from where 语句确定要查询的表，group by 确定要查询的部门
 
 ## 优化建议
+
 ![](优化方案.png)
